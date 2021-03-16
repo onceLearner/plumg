@@ -6,6 +6,7 @@ import LangCurrency from '../components/LangCurrency'
 import LowerCards from '../components/LowerCards'
 import MiddleShow from '../components/MiddleShow'
 import Quote from '../components/Quote'
+import UnderHeaderShow from '../components/UnderHeaderShow'
 import UpperFooterImage from '../components/UpperFooterImage'
 import styles from '../styles/Home.module.css'
 
@@ -19,6 +20,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <Header />
+
+        <UnderHeaderShow />
 
         <Quote />
 
