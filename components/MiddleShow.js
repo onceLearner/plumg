@@ -2,8 +2,8 @@ import React from 'react'
 
 const MiddleShow = () => {
     return (
-        <div>
-            middle
+        <div className="text-5xl p-20 ">
+            Main show
 
         </div>
     )
