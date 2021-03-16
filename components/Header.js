@@ -6,7 +6,7 @@ const Header = () => {
         <div className="w-full h-screen" >
 
             <div className="relative w-full " style={{ height: "80vh" }}>
-                <Image src="/Carousel2.jpg" layout="fill" className={`transform  hover:scale-105 ransition-transform duration-700 ease-in`} objectFit="cover" />
+                <Image src="/Carousel2.jpg" layout="fill" className={`transform  hover:scale-105 ransition-transform duration-700 ease-in`} objectFit="cover" priority />
                 <div className="absolute top-0  transition-opacity duration-300 ease-linear  right-0 left-0 bottom-0 bg-gradient-to-br from-black to-transparent z-10 opacity-40    "></div>}
             </div>
 
