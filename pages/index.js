@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import Destinations from '../components/destinations'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 import LangCurrency from '../components/LangCurrency'
+import LowerCards from '../components/LowerCards'
+import MiddleShow from '../components/MiddleShow'
+import Quote from '../components/Quote'
 import UpperFooterImage from '../components/UpperFooterImage'
 import styles from '../styles/Home.module.css'
 
@@ -14,10 +18,18 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Header />
 
+        <Quote />
 
+        <MiddleShow />
 
-        <UpperFooterImage />
+        <LowerCards />
+
+        <div className="relative">
+
+          <UpperFooterImage />
+        </div>
 
         <Destinations />
 
