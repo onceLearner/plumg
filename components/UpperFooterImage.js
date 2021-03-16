@@ -9,7 +9,7 @@ const UpperFooterImage = () => {
 
     return (
         <div className="w-full h-screen my-10" onMouseOver={() => setIsScrolling(true)} onMouseLeave={() => setIsScrolling(false)} >
-            <Image src="/Garden.jpg" layout="fill" className={`transform ${isScrolling && 'scale-105'} transition-transform duration-700 ease-in`} objectFit="cover" priority="true" />
+            <Image src="/upperfooter.jpg" layout="fill" className={`transform ${isScrolling && 'scale-105'} transition-transform duration-700 ease-in`} objectFit="cover" priority="true" quality={30} />
             <div className="absolute top-1/4  md:right-10  p-8     md:w-3/6  w-full   h-2/5    bg-white rounded-xl  shadow-lg  md:p-16  flex flex-col   justify-evenly" >
 
                 <h2 className="text-3xl  font-semibold capitalize  ">
