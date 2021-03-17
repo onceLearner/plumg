@@ -1,3 +1,4 @@
+import React, { useState } from "react"
 import Head from 'next/head'
 import Destinations from '../components/destinations'
 import Footer from '../components/Footer'
@@ -6,11 +7,15 @@ import LangCurrency from '../components/LangCurrency'
 import LowerCards from '../components/LowerCards'
 import MiddleShow from '../components/MiddleShow'
 import Quote from '../components/Quote'
+import RightSlider from '../components/rightSlider'
 import UnderHeaderShow from '../components/UnderHeaderShow'
 import UpperFooterImage from '../components/UpperFooterImage'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -19,6 +24,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
+
+
         <Header />
 
         <UnderHeaderShow />
@@ -42,14 +50,18 @@ export default function Home() {
 
       <footer className="flex-0 ">
 
-        <div className="md:absolute right-4  md:mt-20 md:mr-4  z-10   ">
+
+
+
+
+        <div className="md:absolute hidden md:block right-4  md:mt-20 md:mr-4  z-10   ">
           <LangCurrency />
 
         </div>
 
-        <div>
-          <Footer />
-        </div>
+
+        <Footer />
+
 
 
 
