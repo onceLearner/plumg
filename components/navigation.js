@@ -7,6 +7,8 @@ const classHover = "bg-white opacity-60 cursor-pointer hover:opacity-90 transiti
 
 const Navigation = (props) => {
 
+    const [showRightSlider, setShowRightSlider] = useState(false)
+
 
 
 
@@ -14,13 +16,15 @@ const Navigation = (props) => {
 
     return (
         <div className="w-full ">
-
+            { showRightSlider &&
+                <RightSlider setShowRightSlider={setShowRightSlider} setZvalue={props.setZvalue} />
+            }
 
 
             <div className={`flex  justify-between w-full  p-3  `}>
 
 
-                <div className={`p-2 rounded-full  flex items-center   ${classHover} `}>
+                <div onClick={() => { setShowRightSlider(true); props.setZvalue(-1) }} className={`p-2 rounded-full  flex items-center   ${classHover} `}>
                     <IconMenu />
                 </div>
 

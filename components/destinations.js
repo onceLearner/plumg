@@ -13,14 +13,31 @@ const Destinations = () => {
                     <h3>New Destinations</h3>
                     <span className="transform rotate-90  ">{'>'}</span>
                 </div>
-                <div className={showNewDest ? `flex flex-col  duration-600 transition-transform  ` : `hidden transition duration-600 `}>
-                    <p>A</p>
-                    <p>A</p>
-                    <p>A</p>
-                    <p>A</p>
-                    <p>A</p>
-                    <p>A</p>
-                    <p>A</p>
+                <div className={`flex flex-col space-y-4  w-full ${showNewDest ? 'h-72' : 'h-0 overflow-hidden '} transition-all duration-300 ease-linear    `} style={{ zIndex: "140" }}>
+                    <h3 className="text-gray-600 pt-2 ">the As</h3>
+                    <div className="grid grid-cols-3 text-gray-400 text-sm  p-2 py-4  ">
+                        <p>A</p>
+                        <p>A</p>
+                        <p>A</p>
+                        <p>A</p>
+                        <p>A</p>
+                        <p>A</p>
+                        <p>A</p>
+
+                    </div>
+                    <h3 className="text-gray-600  pt-2 ">the Bs</h3>
+                    <div className="grid grid-cols-3 text-gray-400 text-sm p-2 py-4  ">
+                        <p>b</p>
+                        <p>b</p>
+                        <p>b</p>
+                        <p>b</p>
+                        <p>b</p>
+                        <p>b</p>
+                        <p>b</p>
+
+                    </div>
+
+
                 </div>
 
             </div>
@@ -32,7 +49,7 @@ const Destinations = () => {
                     <span className="transform rotate-90  ">{'>'}</span>
 
                 </div>
-                <div className={showDest ? `flex flex-col  duration-600 transition-transform  ` : `hidden transition duration-600 `}>
+                <div className={`flex flex-col  w-full  ${showDest ? 'h-72' : 'h-0 overflow-hidden '} transition-all duration-300 ease-linear    `} style={{ zIndex: "140" }}>
                     <p>A</p>
                     <p>A</p>
                     <p>A</p>
@@ -46,7 +63,7 @@ const Destinations = () => {
             </div>
 
 
-        </div>
+        </div >
     )
 }
 

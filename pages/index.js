@@ -14,6 +14,8 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
+  const [zvalue, setZvalue] = useState(0)
+
 
 
   return (
@@ -27,9 +29,9 @@ export default function Home() {
 
 
 
-        <Header />
+        <Header setZvalue={setZvalue} />
 
-        <UnderHeaderShow />
+        <UnderHeaderShow zvalue={zvalue} />
 
         <Quote />
 
